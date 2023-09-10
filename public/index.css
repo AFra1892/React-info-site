@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.navigation{
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  background-color:#21222A ;
+  padding: 1rem;
+}
+.nav-item{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.nav-img{
+  width: 60px;
+}
+.logo{
+  display: flex;
+  flex-direction: row;
+  color: #61DAFB;
+}
+
+main {
+  color: white;
+  background-color: #282D35;
+  height: 100vh;
+  padding: 2rem;
+  background-image: url("./images/react-icon-large.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+main h1{
+  padding: 0;
+  margin: 0;
+}
+main ul{
+  list-style: none;
+}
+main ul li::before{
+  content: "\2022";
+  color: aqua;
+  font-weight: bold;
+  display: inline-block;
+  width: 1rem;
+}
