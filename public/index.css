@@ -1,59 +1,72 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-.navigation{
-  display: flex;
-  justify-content: space-between;
-  color: white;
-  background-color:#21222A ;
-  padding: 1rem;
-}
-.nav-item{
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: row;
-}
-.nav-img{
-  width: 60px;
-}
-.logo{
-  display: flex;
-  flex-direction: row;
-  color: #61DAFB;
-}
-
-main {
-  color: white;
+/*#21222A 
+#282D35*/
+body{
   background-color: #282D35;
-  height: 100vh;
-  padding: 2rem;
-  background-image: url("./images/react-icon-large.png");
-  background-repeat: no-repeat;
-  background-position: right;
+  color: white;
 }
-main h1{
-  padding: 0;
+.container{
+  background-color: #21222A;
+  height: 100vh;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+img{
+  background-color: aqua;
+  height: 250px;
+  width: 300px;
+}
+.name-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.name-container h1{
+  margin-bottom: 5px;
+}
+.name-container p{
+  margin-top: 0;
+}
+.btn-container{
+  display: flex;
+  gap: 20px;
+}
+button{
+  width: 120px;
+  height: 35px;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+}
+.linkedin-btn{
+  background-color: rgb(0, 102, 255);
+  color: white;
+  
+}
+.about-container,
+.interest-container{
+  width: 280px;
+  margin: 2rem;
+  padding-left: 20px;
+  line-height: 1.25rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.about-container h3 , p{
+  padding-bottom: 10px;
   margin: 0;
 }
-main ul{
-  list-style: none;
+.interest-container h3 , p{
+  padding-bottom: 10px;
+  margin: 0;
 }
-main ul li::before{
-  content: "\2022";
-  color: aqua;
-  font-weight: bold;
-  display: inline-block;
-  width: 1rem;
+footer{
+  padding-top: 30px;
+  width: 280px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  margin: 0 2rem;
 }
